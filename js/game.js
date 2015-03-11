@@ -126,7 +126,6 @@ var reset = function () {
 		monster_array[i]=monster_aux;
 	}
 	
-	for
 	if(((hero.x < stone.x +30) && 
 		(hero.x > stone.x-30) && 
 		(hero.y < stone.y +30) && 
@@ -222,6 +221,7 @@ var update = function (modifier) {
 	if (princessesCaught == 5){
 		princessesCaught = 0;
 		++level;
+		//localStorage.setItem("level", level);
 		reset();
 
 	}
